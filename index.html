@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DC Ingeniería Eléctrica SPA — Instalaciones eléctricas y energías renovables no convencionales en Santiago, Chile. Solar, eólica, eficiencia energética.">
-  <title>DC Ingeniería Eléctrica SPA — Energías Renovables Santiago</title>
+  <meta name="description" content="DC Ingeniería Eléctrica SPA — Instalaciones eléctricas, regularización SEC y soluciones solares y eólicas para hogares, empresas e industrias.">
+  <title>DC Ingeniería Eléctrica SPA — Electricidad y Energías Renovables</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -234,6 +234,23 @@
       font-size: 1.5rem; letter-spacing: .05em; margin-bottom: .65rem;
     }
     .srv-desc { font-size: .9rem; font-weight: 300; color: var(--muted); line-height: 1.75; }
+    .srv-price { margin-top: 1.25rem; color: var(--yellow); font-size: .82rem; font-weight: 600; letter-spacing: .02em; }
+
+    /* ─── CATALOG ─────────────────────────── */
+    #catalogo { background: var(--bg-deep); }
+    .catalog-wrap { max-width: 1120px; margin: 0 auto; }
+    .catalog-group { margin-top: 3rem; }
+    .catalog-group-title { color: var(--text); font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: .06em; margin-bottom: 1rem; }
+    .catalog-table { width: 100%; border-collapse: collapse; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .catalog-table th, .catalog-table td { padding: 1rem 1.1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,.06); vertical-align: top; }
+    .catalog-table th { color: var(--orange); font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; }
+    .catalog-table td { color: var(--muted); font-size: .86rem; font-weight: 300; }
+    .catalog-table td:first-child { color: var(--text); font-weight: 500; }
+    .catalog-table td:nth-child(3) { color: var(--yellow); white-space: nowrap; font-weight: 500; }
+    .catalog-table tr:last-child td { border-bottom: 0; }
+    .conditions { margin-top: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .condition { padding: 1rem 1.1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--muted); font-size: .86rem; }
+    .condition strong { color: var(--text); font-weight: 500; }
 
     /* ─── STATS + WHY ─────────────────────── */
     #nosotros { background: var(--bg-deep); }
@@ -329,6 +346,9 @@
       .orbits { width: 380px; height: 380px; }
       .sun-rays { width: 380px; height: 380px; }
       .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
+      .catalog-table { display: block; overflow-x: auto; }
+      .catalog-table th, .catalog-table td { min-width: 170px; }
+      .conditions { grid-template-columns: 1fr; }
       section { padding: 4.5rem 1.25rem; }
     }
     @media (max-width: 480px) {
@@ -343,6 +363,7 @@
   <div class="nav-logo">DC<em>·</em>Ingeniería</div>
   <ul class="nav-links">
     <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#catalogo">Precios</a></li>
     <li><a href="#nosotros">Nosotros</a></li>
     <li><a href="#contacto" class="cta">Cotizar</a></li>
   </ul>
@@ -381,8 +402,8 @@
     </h1>
     <p class="hero-spa">SPA</p>
     <p class="hero-tag">
-      Transformamos hogares y empresas con el poder del <strong>sol y el viento</strong>.<br>
-      Instalaciones eléctricas certificadas y eficiencia energética real.
+      Soluciones eléctricas y renovables para hogares, empresas e industrias.<br>
+      <strong>Más de 20 años de experiencia</strong> y cumplimiento SEC.
     </p>
     <div class="hero-ctas">
       <a href="#contacto" class="btn-primary">
@@ -416,8 +437,9 @@
         <rect width="54" height="54" rx="10" fill="rgba(255,98,0,.08)"/>
         <polygon points="30,6 12,32 26,32 24,48 42,22 28,22" fill="rgba(255,98,0,.18)" stroke="#FF6200" stroke-width="1.6" stroke-linejoin="round"/>
       </svg>
-      <h3 class="srv-name">Instalaciones Eléctricas</h3>
-      <p class="srv-desc">Empalmes, tableros eléctricos, circuitos y certificación SEC. Proyectos residenciales, comerciales e industriales con materiales de primera calidad.</p>
+      <h3 class="srv-name">Revisión y puesta en norma</h3>
+      <p class="srv-desc">Inspección completa y regularización eléctrica ante la SEC para reducir riesgos, observaciones y posibles multas.</p>
+      <p class="srv-price">Desde $85.000</p>
     </div>
 
     <!-- Solar -->
@@ -435,8 +457,9 @@
         <line x1="42.2" y1="11.8" x2="38"   y2="16"   stroke="#FF6200" stroke-width="1.6" stroke-linecap="round"/>
         <line x1="16"   y1="38"   x2="11.8" y2="42.2" stroke="#FF6200" stroke-width="1.6" stroke-linecap="round"/>
       </svg>
-      <h3 class="srv-name">Energía Solar Fotovoltaica</h3>
-      <p class="srv-desc">Diseño e instalación de sistemas solares para autoconsumo y net metering. Reduce tu cuenta de electricidad hasta un 80% con energía limpia.</p>
+      <h3 class="srv-name">Paneles solares residenciales</h3>
+      <p class="srv-desc">Kit solar de 410 W First Solar con instalación, ajustado al consumo y necesidades de tu hogar.</p>
+      <p class="srv-price">Desde $1.250.000</p>
     </div>
 
     <!-- Eficiencia -->
@@ -449,8 +472,9 @@
         <line x1="23" y1="46" x2="31" y2="46" stroke="#00D4AA" stroke-width="1.6" stroke-linecap="round"/>
         <line x1="27" y1="18" x2="27" y2="35" stroke="rgba(0,212,170,.5)" stroke-width="1" stroke-dasharray="2 3"/>
       </svg>
-      <h3 class="srv-name">Eficiencia Energética</h3>
-      <p class="srv-desc">Auditorías de consumo y consultoría energética para empresas. Identificamos oportunidades de ahorro y optimizamos tu operación eléctrica.</p>
+      <h3 class="srv-name">Mantenimiento preventivo</h3>
+      <p class="srv-desc">Revisión de tableros, conexiones y protecciones para prevenir fallas, cortes y detenciones inesperadas.</p>
+      <p class="srv-price">$65.000</p>
     </div>
 
     <!-- Eólica -->
@@ -468,10 +492,58 @@
         <!-- blade 3 bottom-right -->
         <path d="M27 27 L41 35 Q45 33 41 31 Z" fill="rgba(255,98,0,.25)" stroke="#FF6200" stroke-width="1.2" stroke-linejoin="round"/>
       </svg>
-      <h3 class="srv-name">Energía Eólica</h3>
-      <p class="srv-desc">Instalación de aerogeneradores para generación distribuida. Ideal para zonas rurales, proyectos aislados y complemento a sistemas solares.</p>
+      <h3 class="srv-name">Generador eólico</h3>
+      <p class="srv-desc">Generador eólico de pequeño formato, fabricado con materiales reciclados: limpio, circular y silencioso.</p>
+      <p class="srv-price">Desde $1.900.000</p>
     </div>
 
+  </div>
+</section>
+
+<!-- ── CATALOG ───────────────────────────────── -->
+<section id="catalogo" class="divider-top">
+  <p class="s-label reveal">Catálogo de servicios</p>
+  <h2 class="s-title reveal">Soluciones a tu medida</h2>
+  <p class="s-desc reveal">Precios referenciales para orientar tu proyecto. El valor final se define después de una visita técnica.</p>
+
+  <div class="catalog-wrap">
+    <div class="catalog-group reveal">
+      <h3 class="catalog-group-title">Hogares y proyectos residenciales</h3>
+      <table class="catalog-table">
+        <thead><tr><th>Servicio</th><th>Descripción</th><th>Precio aprox.</th><th>Beneficio clave</th></tr></thead>
+        <tbody>
+          <tr><td>Revisión y puesta en norma eléctrica</td><td>Inspección completa y regularización ante SEC</td><td>$85.000 – $140.000</td><td>Evita multas y riesgos de accidentes</td></tr>
+          <tr><td>Instalación eléctrica obra nueva</td><td>Diseño y ejecución certificada</td><td>Desde $12.000 por punto</td><td>Ajustada a tus necesidades</td></tr>
+          <tr><td>Mantenimiento preventivo</td><td>Revisión de tableros, conexiones y protecciones</td><td>$65.000</td><td>Previene fallas y apagones</td></tr>
+          <tr><td>Paneles solares residenciales</td><td>Kit completo 410 W First Solar más instalación</td><td>Desde $1.250.000</td><td>Ahorro de hasta 70% en la cuenta de luz</td></tr>
+          <tr><td>Sistema solar con baterías</td><td>Energía disponible incluso sin red eléctrica</td><td>Desde $2.600.000</td><td>Mayor autonomía energética</td></tr>
+          <tr><td>Generador eólico pequeño formato</td><td>Fabricado con materiales reciclados</td><td>Desde $1.900.000</td><td>Limpio, circular y silencioso</td></tr>
+          <tr><td>Materiales certificados</td><td>Enchufes, cables y protecciones BTicino, entre otros</td><td>Desde $18.900 c/u</td><td>Calidad y garantía oficial</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="catalog-group reveal">
+      <h3 class="catalog-group-title">Empresas e industria</h3>
+      <table class="catalog-table">
+        <thead><tr><th>Servicio</th><th>Descripción</th><th>Precio aprox.</th><th>Beneficio clave</th></tr></thead>
+        <tbody>
+          <tr><td>Auditoría y mejora eléctrica</td><td>Diagnóstico completo más propuesta de eficiencia</td><td>Desde $220.000</td><td>Reduce costos y riesgos</td></tr>
+          <tr><td>Instalaciones de baja y media tensión</td><td>Diseño, ejecución y aprobación SEC</td><td>Cotización personalizada</td><td>Cumplimiento normativo total</td></tr>
+          <tr><td>Mantenimiento industrial</td><td>Plan mensual o anual con atención inmediata</td><td>Desde $150.000/mes</td><td>Evita cortes de energía no programados</td></tr>
+          <tr><td>Energía solar comercial</td><td>Proyectos adaptados al consumo</td><td>Desde $3.800.000</td><td>Ahorro y cumplimiento normativo SEC</td></tr>
+          <tr><td>Asesoría en normativa</td><td>Ley REP, SEC y beneficios Corfo</td><td>Desde $90.000</td><td>Aprovecha las ayudas vigentes</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="conditions reveal">
+      <div class="condition"><strong>Precios referenciales:</strong> sujetos a visita técnica y características del proyecto.</div>
+      <div class="condition"><strong>Presupuestos:</strong> sin costo y sin compromiso.</div>
+      <div class="condition"><strong>Garantía:</strong> mínimo 1 año en mano de obra; equipos según fabricante.</div>
+      <div class="condition"><strong>Formas de pago:</strong> efectivo, transferencia, tarjetas y financiamiento según monto.</div>
+      <div class="condition"><strong>Validez:</strong> precios válidos por 30 días desde su emisión.</div>
+    </div>
   </div>
 </section>
 
@@ -479,24 +551,24 @@
 <section id="nosotros">
   <p class="s-label reveal">¿Por qué elegirnos?</p>
   <h2 class="s-title reveal">Experiencia que genera resultados</h2>
-  <p class="s-desc reveal">Años de trayectoria en instalaciones eléctricas y energías renovables nos respaldan. Trabajamos con estándares de seguridad y calidad.</p>
+  <p class="s-desc reveal">Más de 20 años de experiencia en electricidad y 5 años desarrollando soluciones de energías renovables.</p>
 
   <div class="stats-row">
     <div class="stat reveal d1">
-      <div class="stat-n" data-target="150" data-suffix="+">0</div>
-      <div class="stat-l">Proyectos<br>Completados</div>
+      <div class="stat-n" data-target="20" data-suffix="+">0</div>
+      <div class="stat-l">Años de<br>experiencia</div>
     </div>
     <div class="stat reveal d2">
-      <div class="stat-n" data-target="80" data-suffix="%">0</div>
-      <div class="stat-l">Ahorro<br>Energético</div>
+      <div class="stat-n" data-target="5" data-suffix="+">0</div>
+      <div class="stat-l">Años en<br>renovables</div>
     </div>
     <div class="stat reveal d3">
-      <div class="stat-n" data-target="10" data-suffix="+">0</div>
-      <div class="stat-l">Años de<br>Experiencia</div>
+      <div class="stat-n" data-target="1" data-suffix=" año">0</div>
+      <div class="stat-l">Garantía mínima<br>mano de obra</div>
     </div>
     <div class="stat reveal d4">
-      <div class="stat-n" data-target="100" data-suffix="+">0</div>
-      <div class="stat-l">Clientes<br>Satisfechos</div>
+      <div class="stat-n" data-target="30" data-suffix=" días">0</div>
+      <div class="stat-l">Validez de<br>precios</div>
     </div>
   </div>
 
@@ -506,8 +578,8 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
       <div>
-        <div class="why-title">Certificados SEC</div>
-        <div class="why-desc">Instaladores certificados por la Superintendencia de Electricidad y Combustibles. Tu seguridad está garantizada.</div>
+        <div class="why-title">Cumplimiento SEC</div>
+        <div class="why-desc">Trabajamos con estricto apego a la normativa SEC y priorizamos la seguridad de clientes y equipo.</div>
       </div>
     </div>
     <div class="why-item reveal d2">
@@ -515,8 +587,8 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
       </div>
       <div>
-        <div class="why-title">Respuesta en 24 h</div>
-        <div class="why-desc">Cotizamos en menos de 24 horas. Atención de lunes a sábado para urgencias eléctricas en todo Santiago.</div>
+        <div class="why-title">Visita y presupuesto</div>
+        <div class="why-desc">Evaluamos cada proyecto en terreno y entregamos presupuestos sin costo y sin compromiso.</div>
       </div>
     </div>
     <div class="why-item reveal d3">
@@ -524,8 +596,8 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       </div>
       <div>
-        <div class="why-title">Garantía de Instalación</div>
-        <div class="why-desc">Respaldamos cada trabajo con garantía real. Si algo falla en la instalación, lo resolvemos sin costo adicional.</div>
+        <div class="why-title">Garantía real</div>
+        <div class="why-desc">Ofrecemos mínimo 1 año de garantía en mano de obra y respaldo de fabricante para los equipos.</div>
       </div>
     </div>
     <div class="why-item reveal d4">
@@ -533,8 +605,8 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
       </div>
       <div>
-        <div class="why-title">Energía Limpia para Chile</div>
-        <div class="why-desc">Comprometidos con la transición energética. Cada proyecto reduce la huella de carbono y genera ahorro real para el cliente.</div>
+        <div class="why-title">Experiencia comprobada</div>
+        <div class="why-desc">Más de 20 años en el rubro eléctrico y 5 años incorporando soluciones solares y eólicas.</div>
       </div>
     </div>
   </div>
@@ -546,13 +618,13 @@
     <div>
       <p class="s-label" style="text-align:left">Hablemos</p>
       <h2 class="ct-title reveal">Hagamos tu<br>proyecto <em>realidad</em></h2>
-      <p class="ct-desc reveal">Cuéntanos qué necesitas — instalación eléctrica, paneles solares o eficiencia energética. Preparamos tu cotización gratis y sin compromiso.</p>
+      <p class="ct-desc reveal">Estamos listos para ir a tu casa o empresa, revisar lo que necesites y darte una propuesta ajustada a tu proyecto.</p>
       <div class="ct-items">
-        <a href="tel:+56949596144" class="ct-link reveal d1">
+        <a href="tel:+56966289147" class="ct-link reveal d1">
           <div class="ct-ic">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.71 3.46 2 2 0 0 1 3.68 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </div>
-          <span class="ct-txt">+56 9 4959 6144</span>
+          <span class="ct-txt">+56 9 6628 9147</span>
         </a>
         <a href="mailto:dcingenieriasolaryeolica@gmail.com" class="ct-link reveal d2">
           <div class="ct-ic">
@@ -564,15 +636,11 @@
           <div class="ct-ic">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <span class="ct-txt">Santiago, Chile</span>
+          <span class="ct-txt">San Antonio 378, Of. 808 · Santiago, Chile</span>
         </div>
       </div>
       <div class="socials">
-        <a href="https://www.instagram.com/dcingenieriingenieria" target="_blank" rel="noopener noreferrer" class="soc-btn reveal d1">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          @dcingenieriingenieria
-        </a>
-        <a href="https://wa.me/56949596144?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="soc-btn reveal d2">
+        <a href="https://wa.me/56966289147?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="soc-btn reveal d1">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           WhatsApp
         </a>
@@ -595,8 +663,8 @@
         <line x1="18.4" y1="53.6" x2="12.7" y2="59.3" stroke="#FF6200" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
       <h3 class="ct-card-title">¿Listo para ahorrar<br>en tu factura?</h3>
-      <p class="ct-card-sub">Cotización gratuita · Sin compromiso · 24 h</p>
-      <a href="https://wa.me/56949596144?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20energ%C3%ADas%20renovables" target="_blank" rel="noopener noreferrer" class="btn-primary">
+      <p class="ct-card-sub">Presupuesto sin costo · Sin compromiso</p>
+      <a href="https://wa.me/56966289147?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20energ%C3%ADas%20renovables" target="_blank" rel="noopener noreferrer" class="btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
         Cotizar por WhatsApp
       </a>
@@ -606,7 +674,7 @@
 
 <!-- ── FOOTER ────────────────────────────────── -->
 <footer>
-  <p>© 2025 <em>DC Ingeniería Eléctrica SPA</em> — Santiago, Chile. Todos los derechos reservados.</p>
+  <p>© 2026 <em>DC Ingeniería Eléctrica SPA</em> · RUT 76.249.446-9 — Santiago, Chile. Todos los derechos reservados.</p>
 </footer>
 
 <script>
